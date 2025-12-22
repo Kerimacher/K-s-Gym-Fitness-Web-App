@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    background-image: linear-gradient(to right, #0d0d0d, #0b8bda, #0d0d0d);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+#kalori-baslik {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#kalori-baslik h1 {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#kaloriForm,
+#sonucAlani {
+    max-width: 750px;
+    margin: 30px auto 50px auto;
+    padding: 35px 40px;
+    background-color: rgba(10, 22, 52, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    color: white;
+    text-align: left;
+}
+
+#sonucAlani {
+    margin-top: 40px;
+}
+
+#kaloriForm label,
+#kaloriForm #cinsiyetLabel {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 1px;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+}
+
+#kaloriForm input[type="number"],
+#kaloriForm select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    background-color: rgba(11, 142, 218, 0.45);
+    border: 1px solid #0b8bda;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#kaloriForm input[type="number"]:focus,
+#kaloriForm select:focus {
+    border-color: rgba(11, 139, 218, 0.45);
+    background-color: rgba(11, 139, 218, 0.76);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(11, 139, 218, 0.3);
+    outline: none;
+}
+
+#kaloriForm input[type="number"]::placeholder {
+    color: white;
+}
+
+#kaloriForm .secenekler-grup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-top: 2px;
+}
+
+#kaloriForm .secenekler-grup input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+    transform: scale(1.25);
+    accent-color: #0b8bda;
+}
+
+#kaloriForm .secenekler-grup label.radio-label {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+    margin-right: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-hesapla {
+    background-color: #0b8bda;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-hesapla:hover {
+    background-color: #0873b9;
+    transform: translateY(-2px);
+}
+
+.btn-hesapla:active {
+    transform: translateY(0px);
+}
+
+#sonucAlani h3 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#sonucAlani h4 {
+    font-size: 19px;
+    color: #e8efff;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+#sonucAlani p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+#sonucAlani hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(13, 13, 13, 0), rgba(11, 139, 218, 0.75), rgba(13, 13, 13, 0));
+    margin: 25px 0;
+}
+
+#ekstraNotlar {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 15px;
+    color: #d0d0d0;
+    text-align: center;
+}

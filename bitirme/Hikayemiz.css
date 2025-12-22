@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* SADECE SENİN İSTEDİKLERİN */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20 px;
+    background: linear-gradient(to right, #0d0d0d, #0b8bda, #0d0d0d);
+    color: white;   
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px 60px;
+    height: 100vh;  
+    box-sizing: border-box;  /* Padding hesaba katılsın */
+}
+
+
+.section {
+    padding: 10px;
+}
+
+.story-section {
+    padding-top: 20px;
+    font-size: 23px;
+}
+
+
+.salon-resmi-section {
+    display: flex;
+    align-items: flex-start;
+        
+}
+
+.salon-resmi {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    max-height: 100%;  /* taşmaları engeller */
+}
+
+/* SOL ALT RESİM */
+.diğer-resim-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diğer-resim {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    max-height: 100%;  /* taşmaları engeller */
+    
+}
+
+
+/* SAĞ ALT YAZI STİLİ */
+.bizi-neden-tercih-etmelisiniz-section h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.user-text {
+    color: white;
+    font-size: 25px;
+}

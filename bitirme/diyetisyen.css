@@ -1,0 +1,157 @@
+/* Genel Sayfa Stilleri */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap'); /* Poppins fontunu projeye dahil eder. HTML <head> içinde <link> ile de yapılmıştı, biri yeterlidir. */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0d0d0d, #0b8bda, #0d0d0d);
+    color: white;   
+    text-align: center; 
+    min-height: 100vh; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color:  rgba(13, 13, 13, 0.65); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px; 
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #82caff; 
+}
+
+.sayfa-basligi {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+.sayfa-basligi h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.sayfa-basligi p {
+    font-size: 20px;
+    color: #e0e0e0;
+}
+
+
+/* Diyetisyen Kartları Konteyneri (CSS Grid ile Güncellenmiş) */
+.diyetisyen-kart-konteyner {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 50px; 
+    padding: 20px;
+}
+
+/* Tek Bir Diyetisyen Kartı */
+.diyetisyen-kart {
+    width: 325px; 
+    border-radius: 15px;
+    overflow: hidden; 
+    text-align: left; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(2, 23, 56, 0.341); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+    /* --- REVİZE EDİLDİ: Dikey hizalama için Flexbox eklendi --- */
+    display: flex;
+    flex-direction: column; 
+    /* --- REVİZE BİTTİ --- */
+}
+
+.diyetisyen-kart:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.kart-fotograf-cerceve img {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.kart-icerik {
+    padding: 20px 25px;
+    /* --- REVİZE EDİLDİ: İçeriği dikeyde esnetmek ve hizalamak için Flexbox eklendi --- */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Kart içinde kalan boşluğu doldurur */
+    /* --- REVİZE BİTTİ --- */
+}
+
+.kart-icerik h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.kart-icerik .uzmanlik-alani {
+    font-size: 15px;
+    color: #82caff; 
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.kart-icerik .kisa-hikaye {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white; 
+    margin-bottom: 15px;
+    /* min-height: 80px; // Bu satır flex-grow ile artık gerekmeyebilir, isteğe bağlı tutulabilir veya silinebilir. */
+    /* --- REVİZE EDİLDİ: Kısa hikayenin esnemesi için eklendi --- */
+    flex-grow: 1; /* Kullanılabilir alanı doldurur, altındaki elemanları iter */
+    /* --- REVİZE BİTTİ --- */
+}
+
+.kart-icerik .calisma-saatleri-info {
+    font-size: 13px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.program-iste-btn {
+    display: block; 
+    width: 100%;
+    background-color: white; 
+    color: rgba(10, 22, 52, 0.45); 
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.program-iste-btn:hover {
+    background-color: #f0f0f0;
+    color: #0a78c0;
+    transform: scale(1.03); 
+}

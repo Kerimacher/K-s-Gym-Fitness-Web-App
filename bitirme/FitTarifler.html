@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Tarifler</title>
+    <link rel="stylesheet" href="FitTarifler.css">
+</head>
+<body>
+    <header>
+        <h1>Fit Tarifler</h1>
+    </header>
+
+    <nav id="filtreAlani">
+        <div id="kategoriButonlari">
+            <button class="filtre-btn aktif" data-kategori="tumu">Tümü</button>
+            <button class="filtre-btn" data-kategori="kahvaltilik">Kahvaltılıklar</button>
+            <button class="filtre-btn" data-kategori="anayemek">Ana Yemekler</button>
+            <button class="filtre-btn" data-kategori="tatli">Tatlılar</button>
+            </div>
+        <div id="aramaAlani">
+            <input type="text" id="aramaKutusu" placeholder="Tariflerde ara (örn: yulaf, tavuk, çilek)...">
+        </div>
+    </nav>
+
+    <main id="tarifListesi">
+        <div class="tarif-karti" data-kategori="kahvaltilik">
+            <div class="resim-konteyneri">
+                <img src="yulaf-lapasi.jpg" alt="Yulaflı Sabah Keyfi" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Yulaflı Sabah Keyfi</h3>
+            <p class="tarif-aciklama">Güne enerjik bir başlangıç için ideal, meyveli yulaf lapası. Çilek ve muz ile harika olur.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Yulaf ezmesi (50g)</li>
+                <li>Süt veya su (200ml)</li>                
+                <li>Taze meyveler (örn: çilek, muz, elma)</li>
+                <li>Kuruyemişler (örn: ceviz, fıstık)</li>                
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Küçük bir tencereye yulaf ezmesini ve tercih ettiğiniz sıvıyı (süt ve/veya su) alın. İsteğe bağlı olarak bir çimdik tuzu ekleyin. Orta ateşte, yulaf lapası kaynamaya başlayana kadar ara sıra karıştırarak ısıtın. Kaynamaya başladıktan sonra ateşi kısın ve yulaf taneleri yumuşayıp lapa kıvamına gelene kadar (yaklaşık 5-7 dakika) sürekli karıştırarak pişirmeye devam edin. Eğer çok koyu olursa, kıvamını ayarlamak için azar azar daha fazla süt veya su ekleyebilirsiniz. Pişen yulaf lapasını bir kaseye alın. Üzerine isteğe bağlı olarak seçtiğiniz tatlandırıcıyı gezdirin ve sevdiğiniz taze meyveler, kuruyemişler, tohumlar veya tarçın ile süsleyerek sıcak veya ılık olarak servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="anayemek">
+            <div class="resim-konteyneri">
+                <img src="fırında-sebzeli-tavuk.jpg" alt="Fırında Sebzeli Tavuk" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Fırında Sebzeli Tavuk</h3>
+            <p class="tarif-aciklama">Hafif ve doyurucu, bol sebzeli fırın tavuk. Akşam yemeği için harika bir güveç alternatifi.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Tavuk göğsü (200g)</li>
+                <li>Brokoli, Havuç</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Tavuk göğsünü ve sebzeleri doğradıktan sonra geniş bir kapta zeytinyağı ve baharatlarla birlikte harmanla. Karışımı fırın poşetine ya da borcama yerleştir. Önceden ısıtılmış 180°C fırında yaklaşık 35-40 dakika pişir. Üzeri hafif kızarınca servise hazır.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="tatli">
+            <div class="resim-konteyneri">
+                <img src="chia-pudding.jpg" alt="Kakaolu Chia Puding (Çilekli)" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Kakaolu Chia Puding (Çilekli)</h3>
+            <p class="tarif-aciklama">Sağlıklı ve pratik, şekersiz kakaolu chia tohumlu puding. Çilek ile servis edilebilir.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Chia tohumu (3 yk)</li>
+                <li>Badem sütü (200ml)</li>
+                <li>Vanilya özütü veya vanilin (1/2 çay kaşığı)</li>
+                <li>Çilek (100g)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Geniş ağızlı bir kavanozda veya kapaklı bir kapta chia tohumu, süt, vanilya özütü ve isteğe bağlı tatlandırıcıyı bir kaşık veya küçük bir çırpıcı ile iyice karıştırın. Karışımı 5-10 dakika bekletip tekrar karıştırın (bu, chia tohumlarının topaklanmasını önler). Kabın kapağını kapatıp buzdolabında en az 2-3 saat, tercihen bir gece boyunca bekletin. Chia tohumları sıvıyı emip jel kıvamına geldiğinde pudinginiz hazırdır. Üzerini dilediğiniz taze meyveler, granola veya kuruyemişlerle süsleyerek servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="kahvaltilik">
+            <div class="resim-konteyneri">
+                <img src="fit-menemen.jpg" alt="Fit Menemen" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Fit Menemen</h3>
+            <p class="tarif-aciklama">Güne enerjik bir başlangıç için protein dolu, bol sebzeli, hafif ve lezzetli bir Türk klasiği..</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>2 Yumurta</li>
+                <li>1 Adet Büyük Boy Domates</li>
+                <li>Yeşil Biber</li>
+                <li>Kuru Soğan</li>
+                <li>lor Peyniri (2 yk)</li>
+                <li>Zeytinyağı (1 tk)</li>
+                <li>Pul biber, kekik, bir tutam tuz ve karabiber</li>
+                </li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Zeytinyağını tavada ısıtın, isteğe bağlı olarak soğanları pembeleşinceye kadar kavurun. Doğranmış yeşil biberleri ekleyip birkaç dakika daha soteleyin. Küp doğranmış domatesleri tavaya ekleyin ve domatesler suyunu salıp hafifçe çekene kadar orta ateşte pişirin. Yumurtaları ayrı bir kapta çırpıp tuz ve karabiber ekleyin, ardından tavaya dökün. Peyniri ve dilediğiniz baharatları serpiştirip karıştırarak veya yumurtalar istediğiniz kıvama gelene kadar pişirin. Sıcak servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="anayemek">
+            <div class="resim-konteyneri">
+                <img src="ızgara-somon-kuskonmaz.jpeg" alt="Izgara Somon Ve Kuşkonmaz" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Izgara Somon Ve Kuşkonmaz</h3>
+            <p class="tarif-aciklama">Hafif ve doyurucu, bol sebzeli fırın tavuk. Akşam yemeği için harika bir yulaf alternatifi.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Somon Fileto (200g)</li>
+                <li>Taze Kuşkonmaz (8,10 adet)</li>
+                <li>Zeytinyağı (1 yk)</li>
+                <li>Limon ve limon suyu (1 adet)</li>  
+                <li>Tuz, Karabiber, Kekik, Pul Biber</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Somon filetoları zeytinyağı, limon suyu, doğranmış dereotu (veya biberiye), tuz ve karabiber ile marine edip buzdolabında 15-20 dakika dinlendirin. Kuşkonmazları da kalan zeytinyağı, tuz ve karabiber ile harmanlayın. Izgara tavasını veya fırın ızgarasını ısıtın. Somonu her iki tarafı da güzelce kızarana kadar (kalınlığına göre 4-6 dakika her bir yüzü) pişirin. Kuşkonmazları da ızgarada veya fırında hafif yumuşayana kadar (yaklaşık 5-8 dakika) pişirin. Yanında limon dilimleriyle sıcak servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="tatli">
+            <div class="resim-konteyneri">
+                <img src="enerji-toplari.jpg" alt="Kakaolu Chia Puding (Çilekli)" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Enerji Topları</h3>
+            <p class="tarif-aciklama">Pişirme gerektirmeyen, doğal şeker ve sağlıklı yağlar içeren, spor öncesi veya sonrası, ya da tatlı krizleri için pratik ve sağlıklı enerji topları.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Hurma(10,12 adet)</li>
+                <li>Yulaf ezmesi (yarım su bardağı)</li>
+                <li>Kakao (2 yk)</li>
+                <li>Hindistan Cevizi Yağı (1 yk)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Çekirdekleri çıkarılmış ve yumuşatılmış hurmaları, yulaf ezmesini, kakaoyu, seçtiğiniz kuruyemişleri ve isteğe bağlı diğer malzemeleri (hindistan cevizi yağı, tarçın, tuz vb.) güçlü bir mutfak robotuna veya blendera alın. Tüm malzemeler birbirine karışıp, hafif yapışkan, kolayca şekil alabilen bir hamur kıvamına gelene kadar çekin (gerekirse robotu durdurup kenarları sıyırın). Hazırladığınız karışımdan ceviz büyüklüğünde parçalar alıp avuç içinizde yuvarlayarak toplar oluşturun. İsteğe bağlı olarak hazırladığınız enerji toplarını hindistan cevizi rendesine, kakaoya, toz Antep fıstığına veya susama bulayarak kaplayabilirsiniz. Hazırladığınız topları bir tabağa dizip buzdolabında en az 30 dakika kadar dinlendirerek sertleşmelerini sağlayın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="kahvaltilik">
+            <div class="resim-konteyneri">
+                <img src="avokado-tost.jpg" alt="Enerjik Avokado Tostu" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Enerjik Avokado Tostu</h3>
+            <p class="tarif-aciklama">Hızlı, besleyici ve lezzetli bir kahvaltı veya atıştırmalık.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Tam buğday ekmeği (1-2 dilim)</li>
+                <li>Olgun avokado (yarım veya 1 adet)</li>               
+                <li>Pul biber (isteğe bağlı, bir tutam)</li>    
+                <li>Tuz, karabiber (isteğe bağlı, bir tutam)</li>
+                <li>Haşlanmış yumurta (isteğe bağlı, 1 adet)</li>                             
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Tam buğday ekmeğini kızartın. Avokadoyu bir çatal yardımıyla ezin, içine limon suyu, tuz ve karabiber ekleyip karıştırın. Ezilmiş avokadoyu kızarmış ekmek dilimlerinin üzerine sürün. İsteğe bağlı olarak pul biber serpin ve dilimlenmiş haşlanmış yumurta ekleyerek servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="anayemek">
+            <div class="resim-konteyneri">
+                <img src="ızgara-tavuklu-salata.jpg" alt="Izgara Tavuklu Salata" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Izgara Tavuklu Salata</h3>
+            <p class="tarif-aciklama">Bol yeşillikli, protein deposu, hafif ve doyurucu bir öğün.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Izgara tavuk (200g)</li>
+                <li>Çeri domates (5-6 adet, ikiye bölünmüş)</li>
+                <li>Salatalık (yarım, dilimlenmiş)</li>
+                <li>Kırmızı soğan (çeyrek, ince dilimlenmiş)</li>
+                <li>Zeytinyağı (1 yemek kaşığı)</li>
+                <li>Limon suyu (yarım limonun suyu)</li>
+                <li>Tuz, karabiber (bir tutam)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Tüm yeşillikleri, domatesi, salatalığı ve kırmızı soğanı bir salata kasesinde karıştırın. Üzerine dilimlenmiş ızgara tavuk göğsünü ekleyin. Ayrı bir kapta zeytinyağı, limon suyu, tuz ve karabiberi karıştırarak sos hazırlayın. Sosu salatanın üzerine gezdirip harmanlayın ve servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="tatli">
+            <div class="resim-konteyneri">
+                <img src="fit-kurabiye.png" alt="Muzlu Yulaflı Fit Kurabiye" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Muzlu Yulaflı Fit Kurabiye</h3>
+            <p class="tarif-aciklama">Şekersiz, sağlıklı ve pratik ev yapımı kurabiye.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Olgun muz (1 adet büyük, ezilmiş)</li>
+                <li>Yulaf ezmesi (1 su bardağı)</li>
+                <li>Tarçın (1 çay kaşığı)</li>
+                <li>Kuru üzüm veya damla çikolata (isteğe bağlı, 2 yemek kaşığı)</li>
+                <li>Ceviz veya badem kırığı (isteğe bağlı, 1 yemek kaşığı)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Ezilmiş muzu, yulaf ezmesini ve tarçını bir kapta karıştırın. İsteğe bağlı olarak kuru üzüm, damla çikolata veya kuruyemiş kırığı ekleyebilirsiniz. Karışımdan kaşık yardımıyla yağlı kağıt serili fırın tepsisine küçük kurabiyeler şeklinde dökün. Önceden ısıtılmış 180°C fırında üzerleri kızarana ve sertleşene kadar yaklaşık 12-15 dakika pişirin.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="kahvaltilik">
+            <div class="resim-konteyneri">
+                <img src="lorlu-fit-krep.jpg" alt="Lorlu Yeşillikli Fit Krep" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Lorlu Yeşillikli Fit Krep</h3>
+            <p class="tarif-aciklama">Tam buğday unu ile hazırlanan, doyurucu ve lezzetli bir kahvaltılık.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Tam buğday unu veya yulaf unu (50g - yaklaşık yarım su bardağı)</li>
+                <li>Yumurta (1 adet)</li>
+                <li>Süt (100 ml - yarım su bardağı)</li>
+                <li>Tuz (bir tutam)</li>
+                <li>Zeytinyağı (tava için az miktarda)</li>
+                <li>Lor peyniri (100g)</li>
+                <li>Doğranmış dereotu, maydanoz (yarım demet)</li>             
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Krep malzemelerini pürüzsüz bir kıvam alana kadar çırpın. Az yağlanmış tavada ince krepler pişirin. Ayrı bir kapta lor peyniri ve doğranmış yeşillikleri karıştırın. Hazırladığınız iç harcı kreplerin arasına koyup sarın veya katlayın. Sıcak servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="anayemek">
+            <div class="resim-konteyneri">
+                <img src="firinda-yesil-mercimek.jpg" alt="Fırında Mercimek Köftesi" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Fırında Mercimek Köftesi</h3>
+            <p class="tarif-aciklama">Besleyici, doyurucu ve etsiz bir alternatif arayanlara özel.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Kırmızı mercimek (1 su bardağı, haşlanmış)</li>
+                <li>İnce bulgur (yarım su bardağı, sıcak su ile ıslatılmış)</li>
+                <li>Kuru soğan (1 adet, rendelenmiş)</li>
+                <li>Maydanoz (yarım demet, ince kıyılmış)</li>
+                <li>Kimyon, pul biber, tuz, karabiber (1'er çay kaşığı)</li>
+                <li>Yumurta (1 adet, isteğe bağlı)</li>
+                <li>Galeta unu veya yulaf kepeği (2-3 yemek kaşığı, kıvam için)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Haşlanmış mercimeği, ıslatılmış bulguru, rendelenmiş soğanı, kıyılmış maydanozu ve baharatları bir kapta karıştırın. İsteğe bağlı olarak yumurtayı ekleyin. Ele yapışmayan bir kıvam alana kadar galeta unu veya yulaf kepeği ekleyerek yoğurun. Köfte şekli verip yağlı kağıt serili fırın tepsisine dizin. Önceden ısıtılmış 180°C fırında üzerleri kızarana kadar yaklaşık 20-25 dakika pişirin.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="tatli">
+            <div class="resim-konteyneri">
+                <img src="orman-meyveli-smoothie.jpg" alt="Orman Meyveli Fit Smoothie" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Orman Meyveli Fit Smoothie</h3>
+            <p class="tarif-aciklama">Vitamin ve antioksidan dolu, ferahlatıcı bir içecek.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Karışık dondurulmuş orman meyveleri (böğürtlen, ahududu, yaban mersini - 1 su bardağı)</li>
+                <li>Muz (yarım, dilimlenmiş)</li>
+                <li>Yoğurt (yarım su bardağı) veya süt (yarım su bardağı)</li>
+                <li>Bal veya hurma (isteğe bağlı, tatlandırmak için 1 tatlı kaşığı)</li>
+                <li>Chia tohumu veya yulaf ezmesi (isteğe bağlı, 1 yemek kaşığı)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Karışık dondurulmuş orman meyvelerini bir blender veya mutfak robotuna alın. İsteğe bağlı olarak muzu, yoğurtu veya sütü ekleyin. İsteğe bağlı olarak chia tohumu veya yulaf ezmesi ekleyin. Tüm malzemeleri birlikte karıştırarak iyice çırpın. İsteğe bağlı olarak tatlandırmak için bal veya hurma ekleyin. Servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="kahvaltilik">
+            <div class="resim-konteyneri">
+                <img src="yulafli-omlet.jpg" alt="Yulaflı Omlet " class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Yulaflı Omlet</h3>
+            <p class="tarif-aciklama">Güne protein ve lif dolu, tok tutan bir başlangıç.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Yumurta (2 adet)</li>
+                <li>Yulaf ezmesi (2-3 yemek kaşığı)</li>
+                <li>Süt veya su (2-3 yemek kaşığı)</li>
+                <li>Tuz, karabiber (isteğe bağlı, bir tutam)</li>
+                <li>Zeytinyağı (1 çay kaşığı)</li>
+                <li>Yeşillikler (örneğin: maydanoz, dereotu - süslemek için)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Yumurtaları bir kapta çırpın. Yulaf ezmesi, süt veya su, tuz ve karabiberi ekleyip karıştırın. Isıtılmış tavaya zeytinyağını ekleyin ve karışımı dökün. Kısık ateşte her iki tarafını da pişirin. Üzerine yeşillikler serpip servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="anayemek">
+            <div class="resim-konteyneri">
+                <img src="ton-balıklı-makarna.jpg" alt="Ton Balıklı Kepekli Makarna Salatası" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Ton Balıklı Kepekli Makarna Salatası</h3>
+            <p class="tarif-aciklama">Pratik, doyurucu ve protein dolu bir öğle yemeği seçeneği.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Kepekli makarna (50g - yaklaşık 1 çay bardağı)</li>
+                <li>Konserve ton balığı (süzülmüş, 1 küçük kutu)</li>
+                <li>Haşlanmış mısır (2 yemek kaşığı)</li>
+                <li>Kornişon turşu (2-3 adet, doğranmış)</li>
+                <li>Dereotu (bir tutam, kıyılmış)</li>
+                <li>Yoğurt (2 yemek kaşığı) veya zeytinyağı-limon sosu</li>
+                <li>Tuz, karabiber</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Kepekli makarnayı paketin üzerindeki talimatlara göre haşlayın ve süzün, soğumaya bırakın. Soğuyan makarnayı bir karıştırma kabına alın. Üzerine süzülmüş ton balığı, mısır, doğranmış kornişon turşu ve kıyılmış dereotunu ekleyin. Sos olarak yoğurt (veya zeytinyağı-limon suyu karışımı), tuz ve karabiberi ekleyip tüm malzemeleri iyice karıştırın. Soğuk servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="tatli">
+            <div class="resim-konteyneri">
+                <img src="firinda-tarcinli-elma-dilimleri.jpg" alt="Fırında Tarçınlı Elma Dilimleri" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Fırında Tarçınlı Elma Dilimleri</h3>
+            <p class="tarif-aciklama">Hafif, doğal şekerli ve içinizi ısıtacak bir tatlı.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Elma (2 adet orta boy)</li>
+                <li>Tarçın (1-2 çay kaşığı)</li>
+                <li>Ceviz içi (2-3 yemek kaşığı, iri dövülmüş)</li>
+                <li>Bal veya pekmez (1 tatlı kaşığı, isteğe bağlı)</li>
+                <li>Limon suyu (yarım limonun suyu, kararmaması için)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Elmaların kabuklarını soyun ve dilimleyin. Dilimleri arasına tarçın, ceviz içi ve limon suyu sürün. Fırın tepsisini yağlayın ve elma dilimlerini aralarında boşluk bırakarak dizin. Önceden ısıtılmış 180°C fırında üzerleri kızarana kadar yaklaşık 20-25 dakika pişirin.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="kahvaltilik">
+            <div class="resim-konteyneri">
+                <img src="sebzeli-yumurtali-muffin.jpg" alt="Sebzeli Yumurtalı Muffin" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Sebzeli Yumurtalı Muffin</h3>
+            <p class="tarif-aciklama">Güne sebze ve proteinle başlamanın pratik ve lezzetli yolu.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Yumurta (6 adet)</li>
+                <li>Süt (yarım çay bardağı)</li>
+                <li>Ispanak (1 avuç, doğranmış)</li>
+                <li>Kırmızı kapya biber (yarım, küçük küp doğranmış)</li>
+                <li>Yeşil soğan (2-3 dal, ince doğranmış)</li>
+                <li>Lor peyniri veya beyaz peynir (2 yemek kaşığı, ufalanmış)</li>
+                <li>Tuz, karabiber, pul biber</li>
+                <li>Zeytinyağı (muffin kalıplarını yağlamak için)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Yumurtaları süt, tuz ve baharatlarla çırpın. Doğranmış sebzeleri ve peyniri ekleyip karıştırın. Hafifçe yağlanmış muffin kalıplarına karışımı paylaştırın. Önceden ısıtılmış 180°C fırında yaklaşık 15-20 dakika, üzerleri kızarıp kabarıncaya kadar pişirin. Ilık servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="anayemek">
+            <div class="resim-konteyneri">
+                <img src="ızgara-levrek.avif" alt="Izgara Levrek ve Akdeniz Yeşillikleri Salatası" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Izgara Levrek ve Akdeniz Yeşillikleri Salatası</h3>
+            <p class="tarif-aciklama">Hafif, sağlıklı ve Omega-3 açısından zengin bir akşam yemeği.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Levrek fileto (150-200g)</li>
+                <li>Roka, marul, tere gibi karışık Akdeniz yeşillikleri</li>
+                <li>Çeri domates (5-6 adet)</li>
+                <li>Salatalık (yarım)</li>
+                <li>Kırmızı soğan (ince dilimlenmiş, isteğe bağlı)</li>
+                <li>Zeytinyağı, limon suyu, kekik, tuz, karabiber (balık ve salata için)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Levrek filetoyu zeytinyağı, limon suyu, kekik, tuz ve karabiber ile marine edin. Izgara tavada veya fırın ızgarasında her iki tarafını da pişirin. Yeşillikleri, doğranmış domates, salatalık ve kırmızı soğanı bir kapta karıştırın. Zeytinyağı, limon suyu ve tuz ile salata sosu hazırlayıp salataya ekleyin. Izgara levreği salatanın üzerine yerleştirerek servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="tatli">
+            <div class="resim-konteyneri">
+                <img src="protein-bar-tarifi.jpg" alt="Ev Yapımı Granola Bar" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Ev Yapımı Granola Bar</h3>
+            <p class="tarif-aciklama">Ara öğün veya kahvaltıda tüketebileceğin, sağlıklı ve doyurucu bir enerji barı.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Yulaf ezmesi (1.5 su bardağı)</li>
+                <li>Çiğ badem veya fındık (yarım su bardağı, iri çekilmiş)</li>
+                <li>Kuru kayısı veya hurma (yarım su bardağı, küçük doğranmış)</li>
+                <li>Bal veya pekmez (çeyrek su bardağı)</li>
+                <li>Tahin (2 yemek kaşığı)</li>
+                <li>Tarçın (1 çay kaşığı)</li>
+                <li>Hindistan cevizi yağı (1 yemek kaşığı, eritilmiş)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Elmaların kabuklarını soyun ve dilimleyin. Dilimleri arasına tarçın, ceviz içi ve limon suyu sürün. Fırın tepsisini yağlayın ve elma dilimlerini aralarında boşluk bırakarak dizin. Önceden ısıtılmış 180°C fırında üzerleri kızarana kadar yaklaşık 20-25 dakika pişirin.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="kahvaltilik">
+            <div class="resim-konteyneri">
+                <img src="somon-avokado-çavdar.jpg" alt="Avokado ve Somon Sandwich" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Avokado ve Somon Fümeli Sandwich</h3>
+            <p class="tarif-aciklama">Protein ve sağlıklı yağ dolu, sağlıklı bir öğün seçeneği.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Çavdar ekmeği veya tam buğday ekmeği (1-2 dilim)</li>
+                <li>Olgun avokado (yarım, dilimlenmiş veya ezilmiş)</li>
+                <li>Somon füme (30-40g)</li>
+                <li>Kapari (1 çay kaşığı, isteğe bağlı)</li>
+                <li>Dereotu (taze, süslemek için)</li>
+                <li>Limon suyu (birkaç damla)</li>
+                <li>Karabiber (taze çekilmiş)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Ekmek dilimlerini hafifçe kızartın. Ezilmiş avokadoyu (limon suyu ve karabiber ile tatlandırılmış) veya avokado dilimlerini ekmeğin üzerine yayın. Somon füme dilimlerini yerleştirin. İsteğe bağlı olarak kapari serpin ve taze dereotu ile süsleyin. Hemen servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="anayemek">
+            <div class="resim-konteyneri">
+                <img src="karnabahar.jpg" alt="Fırında Baharatlı Karnabahar" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Fırında Baharatlı Karnabahar</h3>
+            <p class="tarif-aciklama">Klasik karnabahara lezzetli ve sağlıklı bir dokunuş; çıtır çıtır ve doyurucu bir atıştırmalık veya garnitür.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Karnabahar (1 küçük boy, çiçeklerine ayrılmış)</li>
+                <li>Zeytinyağı (1-2 yemek kaşığı)</li>
+                <li>Kırmızı biber tozu (tatlı veya acı, 1 çay kaşığı)</li>
+                <li>Zerdeçal (yarım çay kaşığı)</li>
+                <li>Kimyon (yarım çay kaşığı)</li>
+                <li>Sarımsak tozu (yarım çay kaşığı) ,tuz, karabiber</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Karnabahar çiçeklerini bir karıştırma kabına alın. Üzerine zeytinyağı, kırmızı biber tozu, zerdeçal, kimyon, sarımsak tozu, tuz ve karabiberi ekleyip tüm çiçekler baharatlarla kaplanana kadar iyice karıştırın. Baharatlı karnabaharları tek kat halinde fırın tepsisine yayın. Önceden ısıtılmış 200°C fırında yaklaşık 20-25 dakika, karnabaharlar yumuşayıp kenarları hafifçe kızarana kadar pişirin. Sıcak servis yapın.</p>
+        </div>
+       
+        <div class="tarif-karti" data-kategori="tatli">
+            <div class="resim-konteyneri">
+                <img src="nohut-kurabiye.jpg" alt=" Çikolatalı Nohutlu Fit Kurabiye (Unsuz)" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik"> Çikolatalı Nohutlu Fit Kurabiye (Unsuz)</h3>
+            <p class="tarif-aciklama">Sürpriz malzemesiyle şaşırtan, unsuz, proteinli ve lezzetli bir kurabiye alternatifi.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Haşlanmış nohut (1 su bardağı, suyu iyice süzülmüş ve kabukları soyulmuşsa daha iyi)</li>
+                <li>Şekersiz fıstık ezmesi veya badem ezmesi (çeyrek su bardağı)</li>
+                <li>Bal, pekmez veya akçaağaç şurubu (çeyrek su bardağı)</li>
+                <li>Kakao (2 yemek kaşığı, şekersiz)</li>
+                <li>Vanilya özütü (1 çay kaşığı)</li>
+                <li>Kabartma tozu (yarım çay kaşığı)</li>
+                <li>Bir tutam tuz</li>
+                <li>Damla çikolata (şekersiz veya bitter, 2-3 yemek kaşığı)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Elmaların kabuklarını soyun ve dilimleyin. Dilimleri arasına tarçın, ceviz içi ve limon suyu sürün. Fırın tepsisini yağlayın ve elma dilimlerini aralarında boşluk bırakarak dizin. Önceden ısıtılmış 180°C fırında üzerleri kızarana kadar yaklaşık 20-25 dakika pişirin.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="kahvaltilik">
+            <div class="resim-konteyneri">
+                <img src="kabak-salatasi.jpg" alt="Yoğurtlu ve Naneli Kabak Salatası" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Yoğurtlu ve Naneli Kabak Salatası</h3>
+            <p class="tarif-aciklama">Ferahlatıcı, hafif ve düşük kalorili, özellikle yaz ayları için ideal bir meze veya yan yemek.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Kabak (2 orta boy, rendelenmiş)</li>
+                <li>Yoğurt (1 su bardağı, süzme veya normal, az yağlı)</li>
+                <li>Sarımsak (1-2 diş, ezilmiş veya çok ince doğranmış)</li>
+                <li>Taze nane (birkaç dal, ince kıyılmış)</li>
+                <li>Dereotu (isteğe bağlı, birkaç dal, ince kıyılmış)</li>
+                <li>Zeytinyağı (1 tatlı kaşığı)</li>
+                <li>Tuz, pul biber (üzeri için)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Rendelenmiş kabakları bir tavada çok az zeytinyağı ile suyunu salıp çekene kadar soteleyin ve soğumaya bırakın. Soğuyan kabakları yoğurt, ezilmiş sarımsak, ince kıyılmış nane ve dereotu (kullanıyorsanız) ile karıştırın. Tuzunu ayarlayın. Servis tabağına alın, üzerine biraz zeytinyağı gezdirip pul biber serpin. Soğuk servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="anayemek">
+            <div class="resim-konteyneri">
+                <img src="sebzeli-tavuk.jpg" alt="Sebzeli Tavuk Sote" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Sebzeli Tavuk Sote</h3>
+            <p class="tarif-aciklama">Renkli sebzelerle zenginleştirilmiş, protein dolu, pratik ve lezzetli bir tavuk yemeği.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Tavuk göğsü (2 adet, küp küp doğranmış)</li>
+                <li>Kırmızı kapya biber (1 adet, jülyen doğranmış)</li>
+                <li>Yeşil biber (1 adet, jülyen doğranmış)</li>
+                <li>Sarı dolmalık biber (1 adet, jülyen doğranmış)</li>
+                <li>Soğan (1 orta boy, piyazlık doğranmış)</li>
+                <li>Sarımsak (2 diş, ince kıyılmış)</li>
+                <li>Zeytinyağı (1-2 yemek kaşığı)</li>
+                <li>Kekik, pul biber, karabiber, tuz</li>
+                <li>Soya sosu (1 yemek kaşığı, isteğe bağlı, az tuzlu tercih edin)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Geniş bir tavada zeytinyağını ısıtın. Soğanları ve sarımsakları hafif pembeleşinceye kadar kavurun. Küp doğranmış tavukları ekleyip suyunu salıp çekene kadar soteleyin. Ardından havuç ve biberleri ekleyip birkaç dakika daha soteleyin. En son kabakları ve baharatları (kekik, pul biber, karabiber, tuz) ekleyin. İsteğe bağlı olarak soya sosunu da ilave edip tüm malzemeler yumuşayana kadar yaklaşık 5-7 dakika daha pişirin. Sıcak servis yapın.</p>
+        </div>
+
+        <div class="tarif-karti" data-kategori="tatli">
+            <div class="resim-konteyneri">
+                <img src="parfe.jpg" alt="Ballı Yoğurtlu Meyve Parfesi" class="tarif-gorsel">
+            </div>
+            <h3 class="tarif-baslik">Ballı Yoğurtlu Meyve Parfesi</h3>
+            <p class="tarif-aciklama">Sürpriz malzemesiyle şaşırtan, unsuz, proteinli ve lezzetli bir kurabiye alternatifi.</p>
+            <h4>Malzemeler:</h4>
+            <ul>
+                <li>Süzme yoğurt veya az yağlı yoğurt (1 su bardağı)</li>
+                <li>Bal (1-2 tatlı kaşığı, damak zevkine göre)</li>
+                <li>Vanilya özütü (birkaç damla, isteğe bağlı)</li>
+                <li>Mevsim meyveleri (çilek, ahududu, böğürtlen, şeftali, kivi vb. - 1 su bardağı, doğranmış)</li>
+                <li>Granola veya yulaf ezmesi (2-3 yemek kaşığı, şekersiz tercih edin)</li>
+            </ul>
+            <h4>Hazırlanışı (Özet):</h4>
+            <p>Süzme yoğurdu bal ve vanilya özütü ile karıştırın. Bir bardak veya kaseye sırayla bir kat ballı yoğurt, bir kat doğranmış meyve ve bir kat granola (veya yulaf ezmesi) yayın. Bu işlemi malzemeler bitene kadar tekrarlayın. En üste meyve ve granola serpiştirerek süsleyin. Buzdolabında biraz dinlendirdikten sonra soğuk servis yapın.</p>
+        </div>
+
+        <p id="sonucYokMesaji" class="gizli">Aradığınız kriterlere uygun tarif bulunamadı.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 K's GYM</p>
+    </footer>
+
+    <script src="FitTarifler.js"></script> </body>
+</html>

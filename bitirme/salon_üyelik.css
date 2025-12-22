@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(to right, #0d0d0d, #0b8bda, #0d0d0d);
+    color: white;   
+    text-align: center; 
+    min-height: 100vh;
+    padding-bottom: 50px; 
+}
+
+.sayfa-basligi {
+    padding: 50px 20px 30px 20px; 
+    margin-bottom: 40px;
+}
+
+.sayfa-basligi h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.sayfa-basligi p {
+    font-size: 18px;
+    color: #e0e0e0;
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Üyelik Kartları Konteyneri */
+.uyelik-kart-konteyner {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 35px; 
+    padding: 20px;
+    align-items: stretch; 
+}
+
+/* Tek Bir Üyelik Kartı */
+.uyelik-kart {
+    width: 330px; 
+    border-radius: 18px; 
+    overflow: hidden; 
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    background-color: rgba(4, 18, 41, 0.35); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    display: flex; 
+    flex-direction: column;
+}
+
+.uyelik-kart:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+.kart-baslik-bolumu {
+    padding: 30px 25px 20px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.kart-ikonu {
+    width: 60px; 
+    height: 60px;
+    margin-bottom: 15px;
+    opacity: 0.85;
+    background-color: rgba(255,255,255,0.1); 
+    border-radius: 50%; 
+    display: inline-block; 
+}
+
+.kart-baslik-bolumu h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.kart-detay-bolumu {
+    padding: 25px; 
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.kart-detay-bolumu .fiyat {
+    font-size: 36px;
+    font-weight: 700;
+    color: #82caff; 
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center; 
+}
+
+.kart-detay-bolumu .fiyat span {
+    font-size: 16px;
+    font-weight: 500; 
+    color: #d0d0d0; 
+}
+
+.kart-detay-bolumu ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0 0 30px 0; 
+    flex-grow: 1; 
+}
+
+.kart-detay-bolumu ul li {
+    font-size: 15px;
+    color: #e0e0e0;
+    margin-bottom: 12px; 
+    padding-left: 25px; 
+    position: relative; 
+}
+
+.kart-detay-bolumu ul li::before { 
+    content: '✓'; 
+    color: #0bda9c; 
+    position: absolute;
+    left: 0;
+    top: 1px; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.uyelik-sec-btn {
+    display: block; 
+    width: 100%;
+    background-color: #ffffff; 
+    color: #0b8bda; 
+    border: none;
+    padding: 15px 20px; 
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px; 
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin-top: auto; 
+}
+
+.uyelik-sec-btn:hover {
+    background-color: #e8eff7; 
+    color: #0a78c0;
+    transform: scale(1.02); 
+}
