@@ -3,11 +3,15 @@
 ### 📝 Project Overview
 This project is a comprehensive web application designed to digitize nutrition and training processes for gym members. It allows users to calculate their calorie needs, access healthy recipes, and manage dietitian appointments seamlessly.
 
+---
+
 ### 🛠 Tech Stack
 * **Backend:** PHP
-* **Database:** MySQL
-* **Frontend:** HTML5, CSS3, JavaScript (Bootstrap / Tailwind)
-* **Tools:** XAMPP, PhpMyAdmin
+* **Database:** MSSQL
+* **Frontend:** HTML5, CSS3, JavaScript 
+* **Tools:** XAMPP, PHPMYADMİN
+
+---
 
 ### 🚀 Key Features
 * **Email Notification System:** Personalized nutrition programs prepared by dietitians are automatically sent to both the user dashboard and the user's email address via PHP mail integration.
@@ -15,3 +19,4 @@ This project is a comprehensive web application designed to digitize nutrition a
 * **Dietitian Appointment System:** A dynamic system for users to book and track appointments based on availability.
 * **Fit Recipes Guide:** Categorized healthy recipes with detailed nutritional values and preparation steps.
 * **User Dashboard:**Receiving a diet plan from a requested dietitian via email.
+
