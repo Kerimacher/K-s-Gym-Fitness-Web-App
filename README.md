@@ -1,17 +1,17 @@
 # 🏋️‍♂️ K's Gym - Solid Sports Web Application
 
-### 📝 Proje Özeti
-Bu proje, spor salonu üyelerinin beslenme ve antrenman süreçlerini dijitalleştirmek amacıyla geliştirilmiş tam kapsamlı bir web uygulamasıdır. 
-Kullanıcıların kalori ihtiyaçlarını hesaplamasına, sağlıklı tariflere ulaşmasına ve diyetisyen randevularını yönetmesine olanak tanır.
+### 📝 Project Overview
+This project is a comprehensive web application designed to digitize nutrition and training processes for gym members. It allows users to calculate their calorie needs, access healthy recipes, and manage dietitian appointments seamlessly.
 
-### 🛠 Kullanılan Teknolojiler
+### 🛠 Tech Stack
 * **Backend:** PHP
 * **Database:** MySQL
 * **Frontend:** HTML5, CSS3, JavaScript (Bootstrap / Tailwind)
 * **Tools:** XAMPP, PhpMyAdmin
 
-### 🚀 Öne Çıkan Özellikler
-* **Kalori İhtiyacı Hesaplayıcı:** Kullanıcının fiziksel verilerine göre günlük alması gereken makroları hesaplar.
-* **Diyetisyen Randevu Sistemi:** Kullanıcıların uygun saatlere göre randevu almasını sağlayan dinamik sistem.
-* **Fit Tarifler Rehberi:** Kategorize edilmiş, besin değerleri belirtilmiş sağlıklı yemek tarifleri.
-* **Kullanıcı Paneli:** Mail yoluyla istenilen kişiden diyet programı alma.
+### 🚀 Key Features
+* **Email Notification System:** Personalized nutrition programs prepared by dietitians are automatically sent to both the user dashboard and the user's email address via PHP mail integration.
+* **Calorie Requirement Calculator:** Calculates daily macro needs based on the user's physical data (age, weight, height, activity level).
+* **Dietitian Appointment System:** A dynamic system for users to book and track appointments based on availability.
+* **Fit Recipes Guide:** Categorized healthy recipes with detailed nutritional values and preparation steps.
+* **User Dashboard:**Receiving a diet plan from a requested dietitian via email.
